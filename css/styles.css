@@ -1,11 +1,16 @@
+html {
+    overflow-x: hidden;
+}
+
 img {
     max-width: 100%;
 }
 
+.body {
+    background-color:#000024;text-align:center;
+}
 .container {
-    /*font-family: 'EB Garamond', serif;
-    font-family: 'Merriweather', serif;*/
-    font-family: 'Pixelify Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
 }
 /* Margin / Padding
 margin:  0    0     0     0
@@ -15,6 +20,7 @@ margin:  0    0     0     0
     /* NavBar Styles */
     color: white;
     background-color: #525289;/*#534F4F;*/
+    opacity: 100%;
 
     border: 8px solid white;
     border-color: white;
@@ -26,16 +32,19 @@ margin:  0    0     0     0
     /* This makes the neon glow */
     -webkit-box-shadow: -1px 1px 5px 9px blue;
     -moz-box-shadow: -1px 1px 5px 9px blue;
-    box-shadow: -1px 1px 15px 9px blue;
+    box-shadow: -1px 1px 30px 9px blue;
+}
+.hidden {
+    color: #000024;
+    text-align: center;
 }
 
 .header {
-    font-family: 'Merriweather', serif;
-  
+    font-family: 'EB Garamond', serif;  
     /* This Controls deadspace inside element */
     padding: 0 20px 10px 50px;    
     /* This Controls deadspace around element */
-    margin-right: 5px; margin-left: 5px; margin-top: 10px; margin-bottom: 0;
+    margin-right: 5px; margin-left: 5px; margin-top: 0px; margin-bottom: 0;
 }
 
 .header-container {
@@ -64,19 +73,15 @@ margin:  0    0     0     0
 
     border-radius: 10px;
     
-    margin-top: 0px; margin-bottom: 5px;
+    margin-top: 20px; margin-bottom: 10px;
     padding: 8px 5px 0 5px;
     border-radius: 10px;
 
     
 }
 
-.nav-bar {
-
-}
-
 .first-page-container {
-    font-family: 'Merriweather', serif;
+    font-family: 'EB Garamond', serif;
     
 
     color: white;
@@ -107,14 +112,15 @@ margin:  0    0     0     0
 
 .neon-box-two {
     color: white;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 45px;
+    font-weight: 600;
 
     height: 250px;
     width: 600px;
 
 
     padding-top: 40px;
+    padding-bottom: 40px;
 
     transform: rotate(-90deg);
     z-index: -1;
@@ -128,6 +134,7 @@ margin:  0    0     0     0
 
 }
 
+
 .pg-one-txt-one {
     text-align: left;
     padding-left: 40px;
@@ -139,7 +146,7 @@ margin:  0    0     0     0
 
     height: 220px;
 
-    font-size: 14px;
+    font-size: 17px;
 }
 
 .pg-one-txt-two {
@@ -150,8 +157,343 @@ margin:  0    0     0     0
 .pg-one-text-two-paragraph-two {
     padding-left: 40px;
 
-    font-size: 14px;
+    font-size: 18px;
 }
+
+
+.second-page-container {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 50px;
+    letter-spacing: 20px;
+
+    margin-top: 300px;
+}
+.char-list {
+    display: grid;
+
+    
+    grid-template-columns: auto;
+
+     
+    margin:auto;
+
+    grid-gap: .5em;
+
+    
+}
+
+.char-list-row-one {
+    font-size: 100px;
+
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 4%;
+}
+
+.char-list-row-two {
+    font-size: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-gap: 8%;
+}
+
+.char-list-row-three {
+    font-size: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 8%;
+}
+
+.char-list-row-four {
+    font-size: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: auto;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 8%;
+}
+
+.char-list-row-five {
+    font-size: 30px;
+    grid-gap: 4%;
+
+    line-height: 250%;
+}
+
+.charListSpecial:hover {
+    color: white;
+    cursor: pointer; 
+
+    font-style: italic;
+    font-weight: 700;
+}
+
+
+
+.neon-box-three {
+    margin: 5%;
+    padding: 3%;
+}
+
+.third-page-container {
+    font-family:'EB Garamond', serif;
+
+    margin-top: 300px;
+}
+
+
+.title {
+    font-family: 'EB Garamond', serif;
+}
+
+.t-one {
+    font-size: 160px;
+    font-weight: 400;
+
+    margin-right: 5%;
+    margin-bottom: 0px;
+}
+
+
+.t-two {
+    font-size: 160px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+
+.t-three {
+    font-size: 160px;
+    font-style:italic;
+    font-weight: 600;
+}
+
+.t-four {
+    font-size: 160px;
+    font-style:italic;
+    font-weight: 700;
+
+}
+
+
+.t-five {
+    font-size: 160px;
+    font-style:oblique;
+    font-weight:800;
+}
+
+.fourth-page-container {
+    font-family: 'EB Garamond'; 
+
+    margin-top: 20%;
+}
+
+.neon-box-four {
+    margin: 2%;
+    padding: 3%;
+}
+
+.neon-box-six {
+    margin: 2%;
+    padding: 3%;
+
+    text-align: left;
+
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+
+    column-count:2;
+}
+
+
+.text-body-double {
+    display: grid;
+
+    margin-right: 4%;
+    margin-top: 5%;
+
+    grid-gap: 5%;
+
+    grid-template-columns: 4fr 1fr;
+}
+
+.neon-box-five {
+    margin: 2%;
+    padding: 3%;
+
+    margin-top: 10%;
+
+    text-align: left;
+
+    font-style: italic;
+    font-size: 28px;
+
+    column-count: 2;
+    break-inside: avoid;
+}
+
+.neon-box-seven {
+    padding: 3%;
+    padding-left: 8%; padding-right: 8%;
+
+    text-align: left;
+
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.fifth-page-container {
+    height: 600px;
+    margin-top: 20%;
+    padding-bottom: 10%;
+
+    font-family: 'EB Garamond', serif;
+    font-size: 40px;
+    color: white;
+}
+
+.rotating-words {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr .5fr 3fr .5fr 1fr;
+
+    width: 80%;
+    max-width: 80%;
+    
+}
+
+
+:root {
+    --clr-neon: hsl(240, 100%, 50%);
+    --clr-bg: hsl(236, 21%, 16%);
+}
+
+.word {
+    padding-bottom: 40px;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    border-radius: 0.25em;
+
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+
+    position: relative;
+}
+
+.word::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background: var(--clr-neon);
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+    filter: blur(1em);
+    opacity: 0.7;
+}
+
+.word::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    background-color: var(--clr-neon);
+    z-index: -1;
+    transition: opacity 100ms linear;
+}
+
+.word:hover,
+.word:focus {
+  color: var(--clr-bg);
+  text-shadow: none;
+  font-weight:800;
+}
+
+.word:hover::before,
+.word:focus::before {
+  opacity: 1;
+}
+.word:hover::after,
+.word:focus::after {
+  opacity: 1;
+}
+
+.one-position-1 {
+    width: 300px;
+    margin-left: 10px;margin-bottom: 3%;
+    font-size: 60px;
+}
+
+.two-position-1 {
+    width: 500px;
+    margin-top: 40%;
+    font-size: 100px;
+}
+
+.three-position-1 {
+    width: 300px;
+    margin-right: 20px; margin-bottom: 3%;
+    font-size: 60px;
+}
+
+.button {
+    color: white;
+    margin-top: 220px;
+    font-size: 150px;
+
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.button-one {
+    padding-right: 100px;
+}
+
+.button-two {
+    padding-left: 100px;
+}
+
+.button-one:hover {
+    cursor: pointer;
+    padding-right: 88px;
+    font-size: 180px;
+}
+
+.button-two:hover {
+    cursor: pointer;
+    padding-left: 88px;
+    font-size: 180px;
+}
+
+
+
 
 
 
